@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+<h1 class="text-center">Company Insert/Update Form.</h1>
+<form align="center" method ='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Insert/Update" class="btn btn-success">
+</form>
+{% endblock %}
